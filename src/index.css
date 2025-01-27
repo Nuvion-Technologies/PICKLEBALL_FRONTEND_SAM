@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float3d {
+    0%, 100% {
+      transform: translate(-50%, -50%) rotate(0deg) translateZ(0);
+    }
+    50% {
+      transform: translate(-50%, -45%) rotate(360deg) translateZ(20px);
+    }
+  }
+  
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-3d-ball {
+    animation: float3d 8s ease-in-out infinite;
+  }
+  
+  .animate-spin-slow {
+    animation: spin-slow linear infinite;
+  }
+  
+
+
+  
